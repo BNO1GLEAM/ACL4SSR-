@@ -1,6 +1,6 @@
 proxy-providers:
   Airport1:
-    url: "http://192.168.1.7:3008/T3B9dgzBzdRbBF8Aqx7P/download/collection/4to1"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -120,3 +120,4 @@ rule-providers:
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
+
