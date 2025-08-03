@@ -15,6 +15,24 @@
 
 type: select（可以手动选择）
 
+客户端：
+
+1.路由：
+
+openwrt:https://github.com/nikkinikki-org/OpenWrt-nikki
+
+OpenClash：https://github.com/vernesong/OpenClash
+
+
+2.客户端
+
+mihomo-party:https://github.com/mihomo-party-org/mihomo-party
+
+clash-verge-rev:https://github.com/clash-verge-rev/clash-verge-rev
+
+FlClash：https://github.com/chen08209/FlClash
+
+
 ### 常用规则地址：
 https://ruleset.skk.moe/
 
