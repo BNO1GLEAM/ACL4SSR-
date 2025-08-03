@@ -26,12 +26,13 @@ proxy-groups:
   - {name: 📲 Telegram, type: select, proxies: [🚀 默认代理, ♻️ 香港智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🎥 NETFLIX, type: select, proxies: [🚀 默认代理, ♻️ 香港智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🍎 Apple, type: select, proxies: [直连, 🚀 默认代理]}
-  - {name: 🎯 直连, type: select, proxies: [直连, 🚀 默认代理]}
-  - {name: 🐟 漏网之鱼, type: select, proxies: [直连, 🚀 默认代理, ♻️ 香港智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点]}
+  - {name: Direct, type: select, proxies: [直连]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [直连, 🚀 默认代理]}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日|jp|japan"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?i)新加坡|坡|狮城|SG|Singapore"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美|us|unitedstates|united states"}
+  - {name: oth 其他节点, type: select, include-all: true, filter: "(?i)^(?!.*(香港|台湾|日本|韩国|新加坡|美国|英国|德国|法国|印度|泰国|越南|印尼|澳大利亚|巴西|港|台|日|韩|新|美|英|印|hk|tw|jp|kr|sg|us|uk|de|fr|in|th|vn|id|au|br)).*"}
   - {name: ♻️ 香港智能, type: smart, uselightgbm: false, collectdata: false, include-all: true, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: ♻️ 日本智能, type: smart, uselightgbm: false, collectdata: false, include-all: true, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
   - {name: ♻️ 狮城智能, type: smart, uselightgbm: false, collectdata: false, include-all: true, interval: 300, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$" }
@@ -62,17 +63,17 @@ rules:
   - RULE-SET,game,🎮 游戏平台
   - RULE-SET,gfw_domain,🚀 默认代理 
   - RULE-SET,geolocation-!cn,🚀 默认代理
-  - RULE-SET,cn_domain,🎯 直连
-  - RULE-SET,Download,🎯 直连
-  - RULE-SET,PrivateTracker,🎯 直连
-  - RULE-SET,google-cn,🎯 直连
-  - RULE-SET,steam-cn,🎯 直连
-  - RULE-SET,lan,🎯 直连,no-resolve
-  - RULE-SET,googlefcm,🎯 直连,no-resolve
+  - RULE-SET,cn_domain,Direct
+  - RULE-SET,Download,Direct
+  - RULE-SET,PrivateTracker,Direct
+  - RULE-SET,google-cn,Direct
+  - RULE-SET,steam-cn,Direct
+  - RULE-SET,lan,Direct,no-resolve
+  - RULE-SET,googlefcm,Direct,no-resolve
   - RULE-SET,google_ip,🍀 Google,no-resolve
   - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
   - RULE-SET,telegram_ip,📲 Telegram,no-resolve
-  - RULE-SET,cn_ip,🎯 直连
+  - RULE-SET,cn_ip,Direct
   - MATCH,🐟 漏网之鱼
 
 # 规则集
