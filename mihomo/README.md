@@ -12,3 +12,16 @@
 例如：  - {name: 🚀 默认代理, type: select, proxies: [♻️ 香港智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
 
 type: select（可以手动选择）
+
+### 常用规则地址：
+https://ruleset.skk.moe/
+
+geoip https://github.com/MetaCubeX/meta-rules-dat
+
+geosite https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo-lite/geosite
+
+分流规则 https://github.com/blackmatrix7/ios_rule_script
+
+订阅转换 https://github.com/ACL4SSR/ACL4SSR/tree/master
+
+教程 https://github.com/DustinWin/dustinwin.github.io?tab=readme-ov-file
