@@ -1,4 +1,4 @@
-# 自用! 适用于mihomo内核（smart内核）搭配nikki
+# 自用! 适用于mihomo内核（smart内核等）搭配nikki
 ## ❗❗❗无出站🈚和DNS配置等，只有🈶订阅导入、规则分组、分流规则！！！！
 ### 使用说明：
   Airport1:
